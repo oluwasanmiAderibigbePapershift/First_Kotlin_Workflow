@@ -1,10 +1,10 @@
-package com.example.firstkotlinworkflow
+package com.example.firstkotlinworkflow.addTwoNumbers
 
 import com.squareup.workflow1.Snapshot
 import com.squareup.workflow1.StatefulWorkflow
 import com.squareup.workflow1.action
 
-object MainLayoutWorkFlow : StatefulWorkflow<Unit, MainLayoutWorkFlow.State, Nothing, MainScreen >() {
+object MainLayoutWorkFlow : StatefulWorkflow<Unit, MainLayoutWorkFlow.State, Nothing, MainScreen>() {
     data class State(
             val firstNumber : Int,
             val secondNumber : Int,

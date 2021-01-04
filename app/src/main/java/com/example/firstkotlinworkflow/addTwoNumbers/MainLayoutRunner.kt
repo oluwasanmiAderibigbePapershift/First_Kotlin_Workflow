@@ -1,13 +1,8 @@
-package com.example.firstkotlinworkflow
+package com.example.firstkotlinworkflow.addTwoNumbers
 
 import com.example.firstkotlinworkflow.databinding.ActivityMainBinding
-import com.squareup.workflow1.ui.LayoutRunner
+import com.squareup.workflow1.ui.*
 import com.squareup.workflow1.ui.LayoutRunner.Companion.bind
-import com.squareup.workflow1.ui.ViewEnvironment
-import com.squareup.workflow1.ui.ViewFactory
-import com.squareup.workflow1.ui.WorkflowUiExperimentalApi
-import com.squareup.workflow1.ui.setTextChangedListener
-import com.squareup.workflow1.ui.updateText
 
 @OptIn(WorkflowUiExperimentalApi::class)
 class MainLayoutRunner(private val mainBinding: ActivityMainBinding) : LayoutRunner<MainScreen>{

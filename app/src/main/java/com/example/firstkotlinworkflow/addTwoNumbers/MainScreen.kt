@@ -1,4 +1,4 @@
-package com.example.firstkotlinworkflow
+package com.example.firstkotlinworkflow.addTwoNumbers
 
 data class MainScreen(
     val firstNumber: Int,

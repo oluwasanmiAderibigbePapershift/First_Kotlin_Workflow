@@ -1,7 +1,8 @@
-package com.example.firstkotlinworkflow
+package com.example.firstkotlinworkflow.addTwoNumbers
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.firstkotlinworkflow.R
 import com.squareup.workflow1.ui.ViewRegistry
 import com.squareup.workflow1.ui.WorkflowRunner
 import com.squareup.workflow1.ui.WorkflowUiExperimentalApi
