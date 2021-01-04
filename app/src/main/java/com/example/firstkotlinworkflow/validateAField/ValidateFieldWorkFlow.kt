@@ -1,5 +1,7 @@
 package com.example.firstkotlinworkflow.validateAField
 
+import androidx.annotation.StringRes
+import com.example.firstkotlinworkflow.R
 import com.squareup.workflow1.Snapshot
 import com.squareup.workflow1.StatefulWorkflow
 import com.squareup.workflow1.action
@@ -10,12 +12,12 @@ object ValidateFieldWorkFlow : StatefulWorkflow<Unit, ValidateFieldWorkFlow.Form
 
     data class FormState(
         val email : String,
-        val errorMessage : String
+        @StringRes val errorMessage : Int
     )
 
 
     override fun initialState(props: Unit, snapshot: Snapshot?): FormState {
-        return FormState("", "")
+        return FormState("", VALID_EMAIL_ID)
     }
 
     override fun render(
@@ -46,9 +48,9 @@ object ValidateFieldWorkFlow : StatefulWorkflow<Unit, ValidateFieldWorkFlow.Form
 
     private fun onValidateTapped() = action {
         state = if(state.email.isValidateEmail()){
-            state.copy(errorMessage = "")
+            state.copy(errorMessage = VALID_EMAIL_ID)
         }else{
-            state.copy(errorMessage =  "Email not valid")
+            state.copy(errorMessage =  R.string.validate_field_invalid_email)
         }
     }
 
