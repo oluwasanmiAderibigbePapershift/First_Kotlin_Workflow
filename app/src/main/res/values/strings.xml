@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">First Kotlin Workflow</string>
     <string name="validate_field.invalid_email">This email is invalid.</string>
+    <string name="validate_form.invalid_first_name">First name can not be blank</string>
+    <string name="validate_form.invalid_last_name">Last name can not be blank</string>
+    <string name="validate_form.invalid_age">Age should not be less than 18</string>
+    <string name="validate_form.invalid_email">Email is invalid</string>
+
+
+
 </resources>
