@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.firstkotlinworkflow"
-        minSdkVersion 21
+        minSdkVersion 26
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -40,6 +40,7 @@ dependencies {
     def lifecycle_version = "2.2.0"
     def arch_version = "2.1.0"
     def fragment_version = "1.2.5"
+    def design_version = "main-b83"
 
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
@@ -60,5 +61,7 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycle_version"
 
     implementation "androidx.fragment:fragment-ktx:$fragment_version"
+
+    implementation "com.papershift:design:$design_version"
 
 }

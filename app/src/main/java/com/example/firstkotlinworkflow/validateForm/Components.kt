@@ -1,6 +1,7 @@
 package com.example.firstkotlinworkflow.validateForm
 
 import androidx.appcompat.app.AppCompatActivity
+import com.example.firstkotlinworkflow.form.FormWorkFlowRunner
 import com.squareup.workflow1.ui.ViewRegistry
 import com.squareup.workflow1.ui.WorkflowUiExperimentalApi
 
@@ -9,7 +10,6 @@ import com.squareup.workflow1.ui.WorkflowUiExperimentalApi
 class Components(context : AppCompatActivity) {
 
     val viewRegistry = ViewRegistry(
-        ValidateFormLayoutRunner
+        FormWorkFlowRunner
     )
-
 }
