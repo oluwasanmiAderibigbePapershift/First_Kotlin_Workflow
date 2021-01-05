@@ -62,6 +62,7 @@ object ValidateFormWorkFlow : StatefulWorkflow<Unit, ValidateFormWorkFlow.FormSt
     }
 
     //TODO [oa_5-01-2020] This code is wrong. If only the last field is valida, then the entire form would be seen as valid. find a way to fix this.
+    //Add a valid state for every field?
     private fun onSubmitTapped() = action {
 
         state = if(state.firstName.isNotBlank()){
