@@ -1,6 +1,6 @@
 # First_Kotlin_Workflow
 
-A play ground for kotlin workflow. I am actively learning the framework so the code isn't the "perfect".
+A play ground for kotlin workflow. I am actively learning the framework so free feel to drop a comment or two where you think the code could be better.
 
 It currently contains three samples:
 1. A calculator that adds two numbers
