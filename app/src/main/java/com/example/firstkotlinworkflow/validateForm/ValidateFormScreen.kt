@@ -1,17 +1,19 @@
 package com.example.firstkotlinworkflow.validateForm
 
+typealias StringResourceId = Int
+
 class ValidateFormScreen(
     val firstName : String,
-    val firstNameError : Int,
+    val firstNameError : StringResourceId,
 
     val lastName : String,
-    val lastNameError : Int,
+    val lastNameError : StringResourceId,
 
     val age : String,
-    val ageError : Int,
+    val ageError : StringResourceId,
 
     val email : String,
-    val emailError : Int,
+    val emailError : StringResourceId,
 
     val isFormValid : Boolean = false,
 

@@ -2,8 +2,6 @@
 
 package com.example.firstkotlinworkflow.validateForm
 
-
-
 import com.squareup.workflow1.ui.WorkflowUiExperimentalApi
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
