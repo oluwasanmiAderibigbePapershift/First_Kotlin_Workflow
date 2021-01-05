@@ -35,5 +35,5 @@ class ValidateFormLayoutRunner(private val binding: ActivityValidateFormBinding)
         ActivityValidateFormBinding::inflate, ::ValidateFormLayoutRunner
     )
 
-
 }
+

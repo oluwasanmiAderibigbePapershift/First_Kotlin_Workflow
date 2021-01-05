@@ -1,5 +1,6 @@
 package com.example.firstkotlinworkflow.validateForm
 
+import android.content.Context
 import androidx.annotation.StringRes
 import com.example.firstkotlinworkflow.R
 import com.example.firstkotlinworkflow.validateAField.emailPattern
@@ -7,6 +8,7 @@ import com.squareup.workflow1.Snapshot
 import com.squareup.workflow1.StatefulWorkflow
 import com.squareup.workflow1.action
 
+//TODO [oa_5-01-2020] A context and other dependencies can be passed into the workflow via the contructor.
 object ValidateFormWorkFlow : StatefulWorkflow<Unit, ValidateFormWorkFlow.FormState, Nothing, ValidateFormScreen>() {
 
     data class FormState(
@@ -104,6 +106,8 @@ object ValidateFormWorkFlow : StatefulWorkflow<Unit, ValidateFormWorkFlow.FormSt
        with(state){
            if(isFirstNameValid.and(isLastNameValid).and(isAgeValid).and(isEmailValid)){
                state = state.copy(isFormValid = true)
+           }else{
+               state = state.copy(isFormValid = false)
            }
        }
     }
