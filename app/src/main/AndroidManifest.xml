@@ -7,23 +7,22 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.FirstKotlinWorkflow">
-        <activity android:name=".validateForm.ValidateFormActivity">
+        android:theme="@style/DesignTheme.DayNight"
+        android:supportsRtl="true">
+        <activity android:name=".validateForm.form.FormButtonActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".validateForm.ValidateFormActivity">
+
         </activity>
         <activity android:name=".validateAField.ValidateFieldActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
-        <activity android:name=".addTwoNumbers.MainActivity"></activity>
+        <activity android:name=".addTwoNumbers.MainActivity" />
     </application>
 
 </manifest>
